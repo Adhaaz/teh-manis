@@ -1,0 +1,2527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avm | Dashboard</title>
+    <link rel="stylesheet" href="css/docs.css" />
+    <link rel="shortcut icon" href="assets/AVM-Logo.png" type="image" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+  </head>
+  <body>
+    <body>
+      <nav>
+        <div class="logo-name">
+          <div class="logo-image">
+            <img src="assets/AVM-Logo.png" alt="" />
+          </div>
+
+          <span class="logo_name">AVM</span>
+        </div>
+
+        <div class="menu-items">
+          <ul class="nav-links">
+            <li>
+              <a href="#dashboard">
+                <i class="uil uil-estate"></i>
+                <span class="link-name">Dahsboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="#downloader">
+                <i class="uil uil-download-alt"></i>
+                <span class="link-name">Downloader</span>
+              </a>
+            </li>
+            <li>
+              <a href="#information">
+                <i class="uil uil-info"></i>
+                <span class="link-name">Information</span>
+              </a>
+            </li>
+            <li>
+              <a href="#nsfw">
+                <i class="uil uil-18-plus"></i>
+                <span class="link-name">Nsfw</span>
+              </a>
+            </li>
+            <li>
+              <a href="#canvas">
+                <i class="uil uil-paint-tool"></i>
+                <span class="link-name">Canvas</span>
+              </a>
+            </li>
+            <li>
+              <a href="#textpro">
+                <i class="uil uil-text"></i>
+                <span class="link-name">Text Maker</span>
+              </a>
+            </li>
+            <li>
+              <a href="#randomimage">
+                <i class="uil uil-image"></i>
+                <span class="link-name">Random Image</span>
+              </a>
+            </li>
+            <li>
+              <a href="#randomvideo">
+                <i class="uil uil-video"></i>
+                <span class="link-name">Random Video</span>
+              </a>
+            </li>
+            <li>
+              <a href="#tools">
+                <i class="uil uil-crockery"></i>
+                <span class="link-name">Tools</span>
+              </a>
+            </li>
+            <li>
+              <a href="#game">
+                <i class="uil uil-game-structure"></i>
+                <span class="link-name">Game</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="logout-mode">
+            <li>
+              <a href="#">
+                <i class="uil uil-github"></i>
+                <span class="link-name">Source Code</span>
+              </a>
+            </li>
+
+            <li class="mode">
+              <a href="#">
+                <i class="uil uil-moon"></i>
+                <span class="link-name">Dark Mode</span>
+              </a>
+
+              <div class="mode-toggle">
+                <span class="switch"></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="dashboard">
+        <div class="top">
+          <i class="uil uil-bars sidebar-toggle"></i>
+
+          <div class="search-box">
+            <!-- <p class="nama">Tes</p> -->
+          </div>
+
+          <img
+            src="https://avatars.githubusercontent.com/u/99073766?v=4"
+            alt="dika"
+          />
+        </div>
+
+        <div class="dash-content" id="dashboard">
+          <div class="overview">
+            <div class="title">
+              <i class="uil uil-tachometer-fast-alt"></i>
+              <span class="text">Dashboard</span>
+            </div>
+
+            <div class="boxes">
+              <div class="box box1">
+                <i class="uil uil-eye"></i>
+                <span class="text">Visited</span>
+                <span class="number" id="visitor">Loading....</span>
+              </div>
+              <div class="box box2">
+                <i class="uil uil-meh"></i>
+                <span class="text">Emm</span>
+                <span class="number">;-;</span>
+              </div>
+              <div class="box box3">
+                <i class="uil uil-server"></i>
+                <span class="text">Progress</span>
+                <span class="number">50%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="activity" id="downloader">
+            <div class="title">
+              <i class="uil uil-download-alt"></i>
+              <span class="text">Downloader</span>
+            </div>
+
+            <div class="activity-data">
+              <div class="data names">
+                <span class="data-title">Name</span>
+                <span class="data-list">Ytmp3</span>
+                <span class="data-list">Ytmp4</span>
+                <span class="data-list">Ytmp4 v2</span>
+                <span class="data-list">Play</span>
+                <span class="data-list">Play mp4</span>
+                <span class="data-list">Tiktok</span>
+                <span class="data-list">Tiktokv2</span>
+                <span class="data-list">Facebook</span>
+                <span class="data-list">instagram</span>
+                <!-- <span class="data-list">instagram v2</span> -->
+                <span class="data-list">savefrom</span>
+                <span class="data-list">mediafire</span>
+                <span class="data-list">sfilemobi search</span>
+                <span class="data-list">sfilemobidl</span>
+                <span class="data-list">stickerpack</span>
+                <span class="data-list">stickerpackdl</span>
+              </div>
+              <div class="data path">
+                <span class="data-title">Path</span>
+                <span class="data-list">api/download/ytmp3</span>
+                <span class="data-list">api/download/ytmp4</span>
+                <span class="data-list">api/download/ytmp4-2</span>
+                <span class="data-list">api/download/play</span>
+                <span class="data-list">api/download/playmp4</span>
+                <span class="data-list">api/download/tiktok</span>
+                <span class="data-list">api/download/tiktokv2</span>
+                <span class="data-list">api/download/fb</span>
+                <span class="data-list">api/download/ig</span>
+                <!-- <span class="data-list">api/download/ig2</span> -->
+                <span class="data-list">api/download/savefrom</span>
+                <span class="data-list">api/download/mediafire</span>
+                <span class="data-list">api/download/sfilemobi</span>
+                <span class="data-list">api/download/sfilemobidl</span>
+                <span class="data-list">api/download/stickerpack</span>
+                <span class="data-list">api/download/stickerpackdl</span>
+              </div>
+              <div class="data Added">
+                <span class="data-title">Method</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <!-- <span class="data-list">Get</span> -->
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+              </div>
+              <div class="data action">
+                <span class="data-title">Action</span>
+                <span class="data-list"
+                  ><a
+                    href="api/download/ytmp3?url=https://www.youtube.com/watch?v=hvL-2TF9bLY&list=RDMM2PRvp-mP_q0&index=15"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/download/ytmp4?url=https://www.youtube.com/watch?v=hvL-2TF9bLY&list=RDMM2PRvp-mP_q0&index=15"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/download/ytmp4-2?url=https://www.youtube.com/watch?v=hvL-2TF9bLY&list=RDMM2PRvp-mP_q0&index=15"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/download/play?q=lost kitten"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/download/playmp4?q=lost kitten"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/download/tiktok?url=https://vm.tiktok.com/ZSJcLPNpe"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/download/tiktokv2?url=https://vm.tiktok.com/ZSJcLPNpe"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+
+                <span class="data-list"
+                  ><a
+                    href="api/download/fb?url=https://www.facebook.com/Animeisekai01/photos/a.586598968533592/1368611010332380/"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/download/ig?url=https://www.instagram.com/reel/Cg4Ik0fjbac/?utm_source=ig_web_copy_link"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <!-- <span class="data-list"
+                  ><a
+                    href="api/download/ig2?url=https://www.instagram.com/reel/Cg4Ik0fjbac/?utm_source=ig_web_copy_link"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                > -->
+
+                <span class="data-list"
+                  ><a
+                    href="api/download/savefrom?url=https://www.instagram.com/reel/Cg4Ik0fjbac/?utm_source=ig_web_copy_link"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/download/mediafire?url=https://www.mediafire.com/file/pwxob70rpgma9lz/GBWhatsApp_v8.75%2528Tutorial_Yud%2529.apk/file"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/download/sfilemobi?q=anime"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/download/sfilemobidl?url=https://sfile.mobi/ycY76gwPD27"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/download/stickerpack?q=anime"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/download/stickerpackdl?url=https://getstickerpack.com/stickers/anger-and-anime"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+              </div>
+              <div class="data status">
+                <span class="data-title">Status</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <!-- <span class="data-list">Online</span> -->
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+              </div>
+            </div>
+          </div>
+          <div class="activity" id="information">
+            <div class="title">
+              <i class="uil uil-info"></i>
+              <span class="text">Information</span>
+            </div>
+
+            <div class="activity-data">
+              <div class="data names">
+                <span class="data-title">Name</span>
+                <span class="data-list">Minecraft java</span>
+                <span class="data-list">Minecraft Bedrock</span>
+                <span class="data-list">Otakudesu Search</span>
+                <span class="data-list">Youtube Search</span>
+                <span class="data-list">Anime Info</span>
+                <span class="data-list">Mal Search</span>
+                <span class="data-list">Anime Season</span>
+                <span class="data-list">Mal Stalk</span>
+                <span class="data-list">Git Stalk</span>
+                <span class="data-list">Brainly</span>
+                <span class="data-list">Bioskop Now</span>
+                <span class="data-list">Bioskop</span>
+                <span class="data-list">Liputan 6</span>
+                <span class="data-list">Cnb Indonesia</span>
+                <span class="data-list">Antara News</span>
+                <span class="data-list">Kompas</span>
+                <span class="data-list">Jadwal Sholat</span>
+                <span class="data-list">Playstore</span>
+                <span class="data-list">Cuaca</span>
+                <span class="data-list">Covid</span>
+                <span class="data-list">Komiku</span>
+                <span class="data-list">Doujindesu</span>
+                <span class="data-list">Kuyhaa</span>
+                <span class="data-list">Adikfilm</span>
+                <span class="data-list">Character</span>
+                <span class="data-list">Stickerpacklink</span>
+              </div>
+              <div class="data path">
+                <span class="data-title">Path</span>
+                <span class="data-list">api/information/java</span>
+                <span class="data-list">api/information/bedrock</span>
+                <span class="data-list">api/information/otakudesu</span>
+                <span class="data-list">api/information/yts</span>
+                <span class="data-list">api/information/anime</span>
+                <span class="data-list">api/information/malsearch</span>
+                <span class="data-list">api/information/animeseason</span>
+                <span class="data-list">api/information/malstalk</span>
+                <span class="data-list">api/information/gitstalk</span>
+                <span class="data-list">api/information/brainly</span>
+                <span class="data-list">api/information/bioskopnow</span>
+                <span class="data-list">api/information/bioskop</span>
+                <span class="data-list">api/information/liputan6</span>
+                <span class="data-list">api/information/cnbindonesia</span>
+                <span class="data-list">api/information/antaranews</span>
+                <span class="data-list">api/information/kompas</span>
+                <span class="data-list">api/information/jadwalsholat</span>
+                <span class="data-list">api/information/playstore</span>
+                <span class="data-list">api/information/cuaca</span>
+                <span class="data-list">api/information/covid</span>
+                <span class="data-list">api/information/komiku</span>
+                <span class="data-list">api/information/doujindesu</span>
+                <span class="data-list">api/information/kuyhaa</span>
+                <span class="data-list">api/information/adikfilm</span>
+                <span class="data-list">api/information/character</span>
+                <span class="data-list">api/information/stickerpacklink</span>
+              </div>
+              <div class="data Added">
+                <span class="data-title">Method</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+              </div>
+              <div class="data action" id="Action">
+                <span class="data-title">Action</span>
+                <span class="data-list"
+                  ><a href="api/information/java?ip=luckynetwork.net"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/information/bedrock?ip=bedrock.bosscraft.net"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/information/otakudesu?q=kanojo"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/information/yts?q=kanojo"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/information/anime?type=simple&q=stein gate"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/information/malsearch?q=kanojo"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/information/animeseason?tahun=2014&season=spring"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/information/malstalk?name=Erumi_"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/information/gitstalk?name=AndikaVikarMuhamad"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/information/brainly?q=Perbedaan hentai"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/information/bioskopnow"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/information/bioskop"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/information/liputan6"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/information/cnbindonesia"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/information/antaranews"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/information/kompas"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/information/jadwalsholat?q=jakarta selatan"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/information/playstore?q=Pubg"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/information/cuaca?lokasi=karet pedurenan"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/information/covid"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/information/komiku?q=one piece"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/information/doujindesu?q=kanojo"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/information/kuyhaa?q=jet brains"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/information/adikfilm?q=harry"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/information/character?q=yuigahama yui"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/information/stickerpacklink?q=anime"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+              </div>
+              <div class="data status">
+                <span class="data-title">Status</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+              </div>
+            </div>
+          </div>
+          <div class="activity" id="nsfw">
+            <div class="title">
+              <i class="uil uil-18-plus"></i>
+              <span class="text">Nsfw</span>
+            </div>
+
+            <div class="activity-data">
+              <div class="data names">
+                <span class="data-title">Name</span>
+                <span class="data-list">Hololive</span>
+                <span class="data-list">Fgo</span>
+                <span class="data-list">Genshin</span>
+                <span class="data-list">Azurlane</span>
+                <span class="data-list">Arknights</span>
+                <span class="data-list">Fireemblem</span>
+                <span class="data-list">Girlfrontline</span>
+                <span class="data-list">Kancolle</span>
+                <span class="data-list">Rule34</span>
+                <span class="data-list">Waifu</span>
+                <span class="data-list">Neko</span>
+                <span class="data-list">Trap</span>
+                <span class="data-list">Blowjob</span>
+              </div>
+              <div class="data path">
+                <span class="data-title">Path</span>
+                <span class="data-list">api/h/hololive</span>
+                <span class="data-list">api/h/fgo</span>
+                <span class="data-list">api/h/genshin</span>
+                <span class="data-list">api/h/azurlane</span>
+                <span class="data-list">api/h/arknights</span>
+                <span class="data-list">api/h/fireemblem</span>
+                <span class="data-list">api/h/girlfrontline</span>
+                <span class="data-list">api/h/kancolle</span>
+                <span class="data-list">api/h/rule34</span>
+                <span class="data-list">api/he/waifu</span>
+                <span class="data-list">api/he/neko</span>
+                <span class="data-list">api/he/trap</span>
+                <span class="data-list">api/he/blowjob</span>
+              </div>
+              <div class="data Added">
+                <span class="data-title">Method</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+              </div>
+              <div class="data action">
+                <span class="data-title">Action</span>
+                <span class="data-list"
+                  ><a href="api/h/hololive"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/h/fgo"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/h/genshin"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/h/azurlane"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/h/arknights"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/h/fireemblem"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/h/girlfrontline"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/h/kancolle"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/h/rule34?q=futa"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/he/waifu"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/he/neko"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/he/trap"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/he/blowjob"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+              </div>
+              <div class="data status">
+                <span class="data-title">Status</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+              </div>
+            </div>
+          </div>
+          <div class="activity" id="canvas">
+            <div class="title">
+              <i class="uil uil-paint-tool"></i>
+              <span class="text">Canvas</span>
+            </div>
+
+            <div class="activity-data">
+              <div class="data names">
+                <span class="data-title">Name</span>
+                <span class="data-list">Tweeter</span>
+                <span class="data-list">Blur</span>
+                <span class="data-list">Gay</span>
+                <span class="data-list">Greyscale</span>
+                <span class="data-list">Invert</span>
+                <span class="data-list">Sepia</span>
+                <span class="data-list">Triggered</span>
+                <span class="data-list">Ads</span>
+                <span class="data-list">Batslap</span>
+                <span class="data-list">Beautiful</span>
+                <span class="data-list">Bed</span>
+                <span class="data-list">Paint</span>
+                <span class="data-list">Stonk</span>
+                <span class="data-list">Delete</span>
+                <span class="data-list">Doublestonk</span>
+                <span class="data-list">Facepalm</span>
+                <span class="data-list">Hitler</span>
+                <span class="data-list">Jail</span>
+                <span class="data-list">Karaba</span>
+                <span class="data-list">Kiss</span>
+                <span class="data-list">Mms</span>
+                <span class="data-list">NotStonk</span>
+                <span class="data-list">Poutine</span>
+                <span class="data-list">Rip</span>
+                <span class="data-list">Spank</span>
+                <span class="data-list">Tatoo</span>
+                <span class="data-list">Trash</span>
+                <span class="data-list">Welcome</span>
+                <span class="data-list">Welcome2</span>
+                <span class="data-list">Welcome3</span>
+                <span class="data-list">Leave</span>
+                <span class="data-list">Rank</span>
+                <span class="data-list">Rank2</span>
+                <span class="data-list">Levelup</span>
+                <span class="data-list">Affect</span>
+                <span class="data-list">Hornycard</span>
+                <span class="data-list">Jojocard</span>
+                <span class="data-list">Patrick</span>
+                <span class="data-list">Bonk</span>
+                <span class="data-list">Burn</span>
+              </div>
+              <div class="data path">
+                <span class="data-title">Path</span>
+                <span class="data-list">api/canvas/tweet</span>
+                <span class="data-list">api/canvas/blur</span>
+                <span class="data-list">api/canvas/gay</span>
+                <span class="data-list">api/canvas/greyscale</span>
+                <span class="data-list">api/canvas/invert</span>
+                <span class="data-list">api/canvas/sepia</span>
+                <span class="data-list">api/canvas/triggered</span>
+                <span class="data-list">api/canvas/ads</span>
+                <span class="data-list">api/canvas/batslap</span>
+                <span class="data-list">api/canvas/beautiful</span>
+                <span class="data-list">api/canvas/bed</span>
+                <span class="data-list">api/canvas/paint</span>
+                <span class="data-list">api/canvas/stonk</span>
+                <span class="data-list">api/canvas/delete</span>
+                <span class="data-list">api/canvas/doublestonk</span>
+                <span class="data-list">api/canvas/facepalm</span>
+                <span class="data-list">api/canvas/hitler</span>
+                <span class="data-list">api/canvas/jail</span>
+                <span class="data-list">api/canvas/karaba</span>
+                <span class="data-list">api/canvas/kiss</span>
+                <span class="data-list">api/canvas/mms</span>
+                <span class="data-list">api/canvas/notstonk</span>
+                <span class="data-list">api/canvas/poutine</span>
+                <span class="data-list">api/canvas/rip</span>
+                <span class="data-list">api/canvas/spank</span>
+                <span class="data-list">api/canvas/tatoo</span>
+                <span class="data-list">api/canvas/trash</span>
+                <span class="data-list">api/canvas/welcome</span>
+                <span class="data-list">api/canvas/welcome2</span>
+                <span class="data-list">api/canvas/welcome3</span>
+                <span class="data-list">api/canvas/leave</span>
+                <span class="data-list">api/canvas/rank</span>
+                <span class="data-list">api/canvas/rank2</span>
+                <span class="data-list">api/canvas/levelup</span>
+                <span class="data-list">api/canvas/affect</span>
+                <span class="data-list">api/canvas/hornycard</span>
+                <span class="data-list">api/canvas/jojocard</span>
+                <span class="data-list">api/canvas/patrick</span>
+                <span class="data-list">api/canvas/bonk</span>
+                <span class="data-list">api/canvas/burn</span>
+              </div>
+              <div class="data Added">
+                <span class="data-title">Method</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+              </div>
+              <div class="data action">
+                <span class="data-title">Action</span>
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/tweet?avatar=https://i.imgur.com/m2rLEIo.jpeg&name=Erumi_&text=Hello world"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/blur?image_url=https://i.imgur.com/m2rLEIo.jpeg"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/gay?image_url=https://i.imgur.com/m2rLEIo.jpeg"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/greyscale?image_url=https://i.imgur.com/m2rLEIo.jpeg"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/invert?image_url=https://i.imgur.com/m2rLEIo.jpeg"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/sepia?image_url=https://i.imgur.com/m2rLEIo.jpeg"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/triggered?image_url=https://i.imgur.com/m2rLEIo.jpeg"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/ads?image_url=https://i.imgur.com/m2rLEIo.jpeg"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/batslap?image_url=https://i.imgur.com/m2rLEIo.jpeg&image_url2=https://i.imgur.com/H1eXOfG.jpeg"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/beautiful?image_url=https://i.imgur.com/m2rLEIo.jpeg"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/bed?image_url=https://i.imgur.com/m2rLEIo.jpeg&image_url2=https://i.imgur.com/H1eXOfG.jpeg"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/paint?image_url=https://i.imgur.com/m2rLEIo.jpeg"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/stonk?image_url=https://i.imgur.com/m2rLEIo.jpeg"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/delete?image_url=https://i.imgur.com/m2rLEIo.jpeg"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/doublestonk?image_url=https://i.imgur.com/m2rLEIo.jpeg&image_url2=https://i.imgur.com/H1eXOfG.jpeg"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/facepalm?image_url=https://i.imgur.com/m2rLEIo.jpeg"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/hitler?image_url=https://i.imgur.com/m2rLEIo.jpeg"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/jail?image_url=https://i.imgur.com/m2rLEIo.jpeg"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/karaba?image_url=https://i.imgur.com/m2rLEIo.jpeg"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/kiss?image_url=https://i.imgur.com/m2rLEIo.jpeg&image_url2=https://i.imgur.com/H1eXOfG.jpeg"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/mms?image_url=https://i.imgur.com/m2rLEIo.jpeg&"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/notstonk?image_url=https://i.imgur.com/m2rLEIo.jpeg"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/poutine?image_url=https://i.imgur.com/m2rLEIo.jpeg"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/rip?image_url=https://i.imgur.com/m2rLEIo.jpeg"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/spank?image_url=https://i.imgur.com/m2rLEIo.jpeg&image_url2=https://i.imgur.com/H1eXOfG.jpeg"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/tatoo?image_url=https://i.imgur.com/m2rLEIo.jpeg"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/trash?image_url=https://i.imgur.com/m2rLEIo.jpeg"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/welcome?avatar=https://i.imgur.com/m2rLEIo.jpeg&groupname=Lsmp%20on%20top&desk=Hwello20%XD"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/welcome2?avatar=https://i.imgur.com/H1eXOfG.jpeg&groupname=Lsmp%20on%20top&username=Erumi&membercount=513&groupicon=https://i.imgur.com/m2rLEIo.jpeg"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/welcome3?avatar=https://i.imgur.com/H1eXOfG.jpeg&groupname=Lsmp%20on%20top&username=Erumi&membercount=513&groupicon=https://i.imgur.com/m2rLEIo.jpeg"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/leave?avatar=https://i.imgur.com/m2rLEIo.jpeg&groupname=Lsmp%20on%20top&desk=kok%20out"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/rank?avatar=https://i.imgur.com/m2rLEIo.jpeg&name=Erumi&needxp=100&currxp=20&level=20"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/rank2?avatar=https://i.imgur.com/m2rLEIo.jpeg&name=Erumi&needxp=100&currxp=20&level=20&rank=03"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/levelup?avatar=https://i.imgur.com/m2rLEIo.jpeg"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/affect?image_url=https://i.imgur.com/m2rLEIo.jpeg"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/hornycard?image_url=https://i.imgur.com/m2rLEIo.jpeg"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/jojocard?image_url=https://i.imgur.com/m2rLEIo.jpeg"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/patrick?image_url=https://i.imgur.com/m2rLEIo.jpeg"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/bonk?image_url=https://i.imgur.com/m2rLEIo.jpeg&image_url2=https://i.imgur.com/H1eXOfG.jpeg"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a
+                    href="api/canvas/burn?image_url=https://i.imgur.com/m2rLEIo.jpeg"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+              </div>
+              <div class="data status">
+                <span class="data-title">Status</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+              </div>
+            </div>
+          </div>
+          <div class="activity" id="textmaker">
+            <div class="title">
+              <i class="uil uil-text"></i>
+              <span class="text">Text Maker</span>
+            </div>
+            <div class="activity-data">
+              <div class="data names capital">
+                <span class="data-title">Name</span>
+                <span class="data-list">Ttp</span>
+                <span class="data-list">Attp</span>
+                <span class="data-list">Devilwings</span>
+                <span class="data-list">Orange</span>
+                <span class="data-list">Valentine</span>
+                <span class="data-list">Blackpink</span>
+                <span class="data-list">Blackpink 2</span>
+                <span class="data-list">Bussines Sign</span>
+                <span class="data-list">Diamond</span>
+                <span class="data-list">Golden</span>
+                <span class="data-list">Carved</span>
+                <span class="data-list">Stone</span>
+                <span class="data-list">Glass</span>
+                <span class="data-list">Luxury</span>
+                <span class="data-list">White Gold</span>
+                <span class="data-list">Girrafe</span>
+                <span class="data-list">Arcane</span>
+                <span class="data-list">Batman</span>
+                <span class="data-list">Circle Neon</span>
+                <span class="data-list">Neon Light</span>
+                <span class="data-list">Ancient</span>
+                <span class="data-list">Led Display</span>
+                <span class="data-list">Neon Display</span>
+                <span class="data-list">Summer Beach</span>
+                <span class="data-list">Summer Time</span>
+                <span class="data-list">Sliced Text</span>
+                <span class="data-list">Neon Glitch</span>
+                <span class="data-list">Christmas Tree</span>
+                <span class="data-list">Candy</span>
+                <span class="data-list">3d Christmas</span>
+                <span class="data-list">Sparkle Christmas</span>
+                <span class="data-list">3d Deepsea</span>
+                <span class="data-list">America</span>
+                <span class="data-list">Future</span>
+                <span class="data-list">3d Rainbow</span>
+                <span class="data-list">3d Pipe</span>
+                <span class="data-list">Pencil</span>
+                <span class="data-list">Blue Circuit</span>
+                <span class="data-list">Space</span>
+                <span class="data-list">Metallic</span>
+                <span class="data-list">Fiction</span>
+                <span class="data-list">Demon</span>
+                <span class="data-list">Transformer</span>
+                <span class="data-list">Berry</span>
+                <span class="data-list">Thunder</span>
+                <span class="data-list">Magma</span>
+                <span class="data-list">3d Stone</span>
+                <span class="data-list">3d Neon</span>
+                <span class="data-list">Glitch</span>
+                <span class="data-list">Neon</span>
+                <span class="data-list">Snow Effect</span>
+                <span class="data-list">Cloud</span>
+                <span class="data-list">Sand</span>
+                <span class="data-list">Sand 2</span>
+                <span class="data-list">3d Sand</span>
+                <span class="data-list">Sand 3</span>
+                <span class="data-list">3d Glue</span>
+                <span class="data-list">Metal Dark</span>
+                <span class="data-list">1917</span>
+                <span class="data-list">Minion</span>
+                <span class="data-list">Holographic</span>
+                <span class="data-list">Metal Purple</span>
+                <span class="data-list">Deluxe Silver</span>
+                <span class="data-list">Break Wall</span>
+                <span class="data-list">Honey</span>
+                <span class="data-list">Dropwater</span>
+                <span class="data-list">Horor Blood</span>
+                <span class="data-list">Toxic</span>
+                <span class="data-list">Equalizer</span>
+                <span class="data-list">3d Underwater</span>
+                <span class="data-list">3d Paper</span>
+                <span class="data-list">Water Color</span>
+                <span class="data-list">3d Metal</span>
+                <span class="data-list">Broken Glass</span>
+                <span class="data-list">3d Gradient</span>
+                <span class="data-list">Art Paper</span>
+                <span class="data-list">Embossed</span>
+              </div>
+              <div class="data path">
+                <span class="data-title">Path</span>
+                <span class="data-list">api/textpro/ttp</span>
+                <span class="data-list">api/textpro/attp</span>
+                <span class="data-list">api/textpro/devilwings</span>
+                <span class="data-list">api/textpro/orange</span>
+                <span class="data-list">api/textpro/valentine</span>
+                <span class="data-list">api/textpro/blackpink</span>
+                <span class="data-list">api/textpro/blackpink2</span>
+                <span class="data-list">api/textpro/bussines-sign</span>
+                <span class="data-list">api/textpro/diamond</span>
+                <span class="data-list">api/textpro/golden</span>
+                <span class="data-list">api/textpro/carved</span>
+                <span class="data-list">api/textpro/stone</span>
+                <span class="data-list">api/textpro/glass</span>
+                <span class="data-list">api/textpro/luxury</span>
+                <span class="data-list">api/textpro/white-gold</span>
+                <span class="data-list">api/textpro/girrafe</span>
+                <span class="data-list">api/textpro/arcane</span>
+                <span class="data-list">api/textpro/batman</span>
+                <span class="data-list">api/textpro/circle-neon</span>
+                <span class="data-list">api/textpro/neon-light</span>
+                <span class="data-list">api/textpro/ancient</span>
+                <span class="data-list">api/textpro/led-display</span>
+                <span class="data-list">api/textpro/neon-display</span>
+                <span class="data-list">api/textpro/summer-beach</span>
+                <span class="data-list">api/textpro/summer-time</span>
+                <span class="data-list">api/textpro/sliced-text</span>
+                <span class="data-list">api/textpro/neon-glitch</span>
+                <span class="data-list">api/textpro/christmas-tree</span>
+                <span class="data-list">api/textpro/candy</span>
+                <span class="data-list">api/textpro/3d-christmas</span>
+                <span class="data-list">api/textpro/sparkle-christmas</span>
+                <span class="data-list">api/textpro/3d-deepsea</span>
+                <span class="data-list">api/textpro/america</span>
+                <span class="data-list">api/textpro/future</span>
+                <span class="data-list">api/textpro/3d-rainbow</span>
+                <span class="data-list">api/textpro/3d-pipe</span>
+                <span class="data-list">api/textpro/pencil</span>
+                <span class="data-list">api/textpro/blue-circuit</span>
+                <span class="data-list">api/textpro/space</span>
+                <span class="data-list">api/textpro/metallic</span>
+                <span class="data-list">api/textpro/fiction</span>
+                <span class="data-list">api/textpro/demon</span>
+                <span class="data-list">api/textpro/transformer</span>
+                <span class="data-list">api/textpro/berry</span>
+                <span class="data-list">api/textpro/thunder</span>
+                <span class="data-list">api/textpro/magma</span>
+                <span class="data-list">api/textpro/3d-stone</span>
+                <span class="data-list">api/textpro/3d-neon</span>
+                <span class="data-list">api/textpro/glitch</span>
+                <span class="data-list">api/textpro/neon</span>
+                <span class="data-list">api/textpro/snow-effect</span>
+                <span class="data-list">api/textpro/cloud</span>
+                <span class="data-list">api/textpro/sand</span>
+                <span class="data-list">api/textpro/sand2</span>
+                <span class="data-list">api/textpro/3d-sand</span>
+                <span class="data-list">api/textpro/sand3</span>
+                <span class="data-list">api/textpro/3d-glue</span>
+                <span class="data-list">api/textpro/metal-dark</span>
+                <span class="data-list">api/textpro/1917</span>
+                <span class="data-list">api/textpro/minion</span>
+                <span class="data-list">api/textpro/holographic</span>
+                <span class="data-list">api/textpro/metal-purple</span>
+                <span class="data-list">api/textpro/deluxe-silver</span>
+                <span class="data-list">api/textpro/break-wall</span>
+                <span class="data-list">api/textpro/honey</span>
+                <span class="data-list">api/textpro/dropwater</span>
+                <span class="data-list">api/textpro/horor-blood</span>
+                <span class="data-list">api/textpro/toxic</span>
+                <span class="data-list">api/textpro/equalizer</span>
+                <span class="data-list">api/textpro/3d-underwater</span>
+                <span class="data-list">api/textpro/3d-paper</span>
+                <span class="data-list">api/textpro/water-color</span>
+                <span class="data-list">api/textpro/3d-metal</span>
+                <span class="data-list">api/textpro/broken-glass</span>
+                <span class="data-list">api/textpro/3d-gradient</span>
+                <span class="data-list">api/textpro/art-paper</span>
+                <span class="data-list">api/textpro/embossed</span>
+              </div>
+              <div class="data Added">
+                <span class="data-title">Method</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+              </div>
+              <div class="data action">
+                <span class="data-title">Action</span>
+                <span class="data-list"
+                  ><a href="api/textpro/ttp?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/attp?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/devilwings?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/orange?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/valentine?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/blackpink?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/blackpink2?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/bussines-sign?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/diamond?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/golden?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/carved?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/stone?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/glass?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/luxury?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/white-gold?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/girrafe?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/arcane?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/batman?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/circle-neon?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/neon-light?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/ancient?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/led-display?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/neon-display?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/summer-beach?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/summer-time?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/sliced-text?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/neon-glitch?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/christmas-tree?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/candy?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/3d-christmas?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/sparkle-christmas?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/3d-deepsea?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/america?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/future?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/3d-rainbow?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/3d-pipe?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/pencil?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/blue-circuit?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/space?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/metallic?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/fiction?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/demon?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/transformer?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/berry?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/thunder?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/magma?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/3d-stone?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/3d-neon?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/glitch?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/neon?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/snow-effect?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/cloud?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/sand?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/sand2?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/3d-sand?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/sand3?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/3d-glue?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/metal-dark?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/1917?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/minion?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/holographic?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/metal-purple?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/deluxe-silver?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/break-wall?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/honey?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/dropwater?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/horor-blood?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/toxic?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/equalizer?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/3d-underwater?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/3d-paper?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/water-color?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/3d-metal?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/broken-glass?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/3d-gradient?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/art-paper?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/textpro/embossed?text=pecinta nz"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+              </div>
+              <div class="data status">
+                <span class="data-title">Status</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+              </div>
+            </div>
+          </div>
+          <div class="activity" id="randomimage">
+            <div class="title">
+              <i class="uil uil-image"></i>
+              <span class="text">Random Image</span>
+            </div>
+
+            <div class="activity-data">
+              <div class="data names">
+                <span class="data-title">Name</span>
+                <span class="data-list">Waifu</span>
+                <span class="data-list">Neko</span>
+                <span class="data-list">Shinobu</span>
+                <span class="data-list">Megumin</span>
+                <span class="data-list">Bully</span>
+                <span class="data-list">Cuddle</span>
+                <span class="data-list">Cry</span>
+                <span class="data-list">Hug</span>
+                <span class="data-list">Awoo</span>
+                <span class="data-list">Kiss</span>
+                <span class="data-list">Lick</span>
+                <span class="data-list">Pat</span>
+                <span class="data-list">Smug</span>
+                <span class="data-list">Bonk</span>
+                <span class="data-list">Yeet</span>
+                <span class="data-list">Blush</span>
+                <span class="data-list">Smile</span>
+                <span class="data-list">Wave</span>
+                <span class="data-list">Highfive</span>
+                <span class="data-list">Handhold</span>
+                <span class="data-list">Nom</span>
+                <span class="data-list">Bite</span>
+                <span class="data-list">Glomp</span>
+                <span class="data-list">Slap</span>
+                <span class="data-list">Kill</span>
+                <span class="data-list">Kick</span>
+                <span class="data-list">Happy</span>
+                <span class="data-list">Wink</span>
+                <span class="data-list">Poke</span>
+                <span class="data-list">Dance</span>
+                <span class="data-list">Cringe</span>
+                <span class="data-list">Google image</span>
+                <span class="data-list">Artbreader</span>
+                <span class="data-list">Pinterest</span>
+                <span class="data-list">Stickertelegram</span>
+                <span class="data-list">Wallpaper</span>
+                <span class="data-list">Wallpaper v2</span>
+              </div>
+              <div class="data path">
+                <span class="data-title">Path</span>
+                <span class="data-list">api/image/sfw/waifu</span>
+                <span class="data-list">api/image/sfw//neko</span>
+                <span class="data-list">api/image/sfw/shinobu</span>
+                <span class="data-list">api/image/sfw/megumin</span>
+                <span class="data-list">api/image/sfw/bully</span>
+                <span class="data-list">api/image/sfw/cuddle</span>
+                <span class="data-list">api/image/sfw/cry</span>
+                <span class="data-list">api/image/sfw/hug</span>
+                <span class="data-list">api/image/sfw/awoo</span>
+                <span class="data-list">api/image/sfw/kiss</span>
+                <span class="data-list">api/image/sfw/lick</span>
+                <span class="data-list">api/image/sfw/pat</span>
+                <span class="data-list">api/image/sfw/smug</span>
+                <span class="data-list">api/image/sfw/bonk</span>
+                <span class="data-list">api/image/sfw/yeet</span>
+                <span class="data-list">api/image/sfw/blush</span>
+                <span class="data-list">api/image/sfw/smile</span>
+                <span class="data-list">api/image/sfw/wave</span>
+                <span class="data-list">api/image/sfw/highfive</span>
+                <span class="data-list">api/image/sfw/handhold</span>
+                <span class="data-list">api/image/sfw/nom</span>
+                <span class="data-list">api/image/sfw/bite</span>
+                <span class="data-list">api/image/sfw/glomp</span>
+                <span class="data-list">api/image/sfw/slap</span>
+                <span class="data-list">api/image/sfw/kill</span>
+                <span class="data-list">api/image/sfw/kick</span>
+                <span class="data-list">api/image/sfw/happy</span>
+                <span class="data-list">api/image/sfw/wink</span>
+                <span class="data-list">api/image/sfw/poke</span>
+                <span class="data-list">api/image/sfw/dance</span>
+                <span class="data-list">api/image/sfw/cringe</span>
+                <span class="data-list">api/image/sfw/gis</span>
+                <span class="data-list">api/image/sfw/artbreader</span>
+                <span class="data-list">api/image/sfw/pinterest</span>
+                <span class="data-list">api/image/sfw/stickertelegram</span>
+                <span class="data-list">api/image/sfw/wallpaper</span>
+                <span class="data-list">api/image/sfw/wallpaper2</span>
+              </div>
+              <div class="data Added">
+                <span class="data-title">Method</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+              </div>
+              <div class="data action">
+                <span class="data-title">Action</span>
+                <span class="data-list"
+                  ><a href="api/image/sfw/waifu"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/image/sfw/neko"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/image/sfw/shinobu"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+
+                <span class="data-list"
+                  ><a href="api/image/sfw/megumin"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/image/sfw/bully"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/image/sfw/cuddle"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/image/sfw/cry"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/image/sfw/hug"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/image/sfw/awoo"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/image/sfw/kiss"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/image/sfw/lick"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/image/sfw/pat"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/image/sfw/smug"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/image/sfw/bonk"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/image/sfw/yeet"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/image/sfw/blush"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/image/sfw/smile"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/image/sfw/wave"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/image/sfw/highfive"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/image/sfw/handhold"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/image/sfw/nom"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/image/sfw/bite"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/image/sfw/glomp"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/image/sfw/slap"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/image/sfw/kill"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/image/sfw/kick"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/image/sfw/happy"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/image/sfw/wink"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/image/sfw/poke"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/image/sfw/dance"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/image/sfw/cringe"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/image/gis?q=cat"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/image/artbreader?q=cat"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/image/pinterest?q=cat"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/image/stickerTelegram?q=anime"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/image/wallpaper?q=anime"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/image/wallpaper2?q=anime"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+              </div>
+              <div class="data status">
+                <span class="data-title">Status</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+              </div>
+            </div>
+          </div>
+          <div class="activity" id="randomvideo">
+            <div class="title">
+              <i class="uil uil-video"></i>
+              <span class="text">Random Video</span>
+            </div>
+
+            <div class="activity-data">
+              <div class="data names">
+                <span class="data-title">Name</span>
+                <span class="data-list">Prem Shahi</span>
+                <span class="data-list">Deepa Chand</span>
+                <span class="data-list">Manisha Chand</span>
+                <span class="data-list">Pratima Shahi</span>
+                <span class="data-list">Man Shahi</span>
+                <span class="data-list">Ganesh Chand</span>
+                <span class="data-list">Bikash Chand</span>
+              </div>
+              <div class="data path">
+                <span class="data-title">Path</span>
+                <span class="data-list">a</span>
+                <span class="data-list">a</span>
+                <span class="data-list">prakashhai@gmail.com</span>
+                <span class="data-list">manishachand@gmail.com</span>
+                <span class="data-list">pratimashhai@gmail.com</span>
+                <span class="data-list">manshahi@gmail.com</span>
+                <span class="data-list">ganeshchand@gmail.com</span>
+              </div>
+              <div class="data Added">
+                <span class="data-title">Method</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+              </div>
+              <div class="data action">
+                <span class="data-title">Action</span>
+                <span class="data-list"
+                  ><a href=""><i class="uil uil-play"></i> Go to </a></span
+                >
+                <span class="data-list"
+                  ><a href=""><i class="uil uil-play"></i> Go to </a></span
+                >
+                <span class="data-list"
+                  ><a href=""><i class="uil uil-play"></i> Go to </a></span
+                >
+                <span class="data-list"
+                  ><a href=""><i class="uil uil-play"></i> Go to </a></span
+                >
+                <span class="data-list"
+                  ><a href=""><i class="uil uil-play"></i> Go to </a></span
+                >
+                <span class="data-list"
+                  ><a href=""><i class="uil uil-play"></i> Go to </a></span
+                >
+                <span class="data-list"
+                  ><a href=""><i class="uil uil-play"></i> Go to </a></span
+                >
+              </div>
+              <div class="data status">
+                <span class="data-title">Status</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+              </div>
+            </div>
+          </div>
+          <div class="activity" id="tools">
+            <div class="title">
+              <i class="uil uil-crockery"></i>
+              <span class="text">Tools</span>
+            </div>
+
+            <div class="activity-data">
+              <div class="data names">
+                <span class="data-title">Name</span>
+                <span class="data-list">Prem Shahi</span>
+                <span class="data-list">Deepa Chand</span>
+                <span class="data-list">Manisha Chand</span>
+                <span class="data-list">Pratima Shahi</span>
+                <span class="data-list">Man Shahi</span>
+                <span class="data-list">Ganesh Chand</span>
+                <span class="data-list">Bikash Chand</span>
+              </div>
+              <div class="data path">
+                <span class="data-title">Path</span>
+                <span class="data-list">a</span>
+                <span class="data-list">a</span>
+                <span class="data-list">prakashhai@gmail.com</span>
+                <span class="data-list">manishachand@gmail.com</span>
+                <span class="data-list">pratimashhai@gmail.com</span>
+                <span class="data-list">manshahi@gmail.com</span>
+                <span class="data-list">ganeshchand@gmail.com</span>
+              </div>
+              <div class="data Added">
+                <span class="data-title">Method</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+              </div>
+              <div class="data action">
+                <span class="data-title">Action</span>
+                <span class="data-list"
+                  ><a href=""><i class="uil uil-play"></i> Go to </a></span
+                >
+                <span class="data-list"
+                  ><a href=""><i class="uil uil-play"></i> Go to </a></span
+                >
+                <span class="data-list"
+                  ><a href=""><i class="uil uil-play"></i> Go to </a></span
+                >
+                <span class="data-list"
+                  ><a href=""><i class="uil uil-play"></i> Go to </a></span
+                >
+                <span class="data-list"
+                  ><a href=""><i class="uil uil-play"></i> Go to </a></span
+                >
+                <span class="data-list"
+                  ><a href=""><i class="uil uil-play"></i> Go to </a></span
+                >
+                <span class="data-list"
+                  ><a href=""><i class="uil uil-play"></i> Go to </a></span
+                >
+              </div>
+              <div class="data status">
+                <span class="data-title">Status</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+              </div>
+            </div>
+          </div>
+          <div class="activity" id="game">
+            <div class="title">
+              <i class="uil uil-game-structure"></i>
+              <span class="text">Game</span>
+            </div>
+
+            <div class="activity-data">
+              <div class="data names">
+                <span class="data-title">Name</span>
+                <span class="data-list">Tebakgame</span>
+                <span class="data-list">Tebakgambar</span>
+                <span class="data-list">Asahotak</span>
+                <span class="data-list">Caklontong</span>
+                <span class="data-list">Family 100</span>
+                <span class="data-list">Siapakahaku</span>
+                <span class="data-list">Susunkata</span>
+                <span class="data-list">Tebakbendera</span>
+                <span class="data-list">Tebakkimia</span>
+                <span class="data-list">Tebakkata</span>
+                <span class="data-list">Tebaklirik</span>
+                <span class="data-list">Tebaktebakan</span>
+                <span class="data-list">Tekateki</span>
+              </div>
+              <div class="data path">
+                <span class="data-title">Path</span>
+                <span class="data-list">api/games/tebakgame</span>
+                <span class="data-list">api/games/tebakgambar</span>
+                <span class="data-list">api/games/asahotak</span>
+                <span class="data-list">api/games/caklontong</span>
+                <span class="data-list">api/games/family100</span>
+                <span class="data-list">api/games/siapakahaku</span>
+                <span class="data-list">api/games/susunkata</span>
+                <span class="data-list">api/games/tebakbendera</span>
+                <span class="data-list">api/games/tebakkimia</span>
+                <span class="data-list">api/games/tebakkata</span>
+                <span class="data-list">api/games/tebaklirik</span>
+                <span class="data-list">api/games/tebaktebakan</span>
+                <span class="data-list">api/games/tekateki</span>
+              </div>
+              <div class="data Added">
+                <span class="data-title">Method</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+                <span class="data-list">Get</span>
+              </div>
+              <div class="data action">
+                <span class="data-title">Action</span>
+                <span class="data-list"
+                  ><a href="api/games/tebakgame"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/games/tebakgambar"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/games/asahotak"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/games/caklontong"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/games/family100"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/games/siapakahaku"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/games/susunkata"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/games/tebakbendera"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/games/tebakkimia"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/games/tebakkata"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/games/tebaklirik"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/games/tebaktebakan"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+                <span class="data-list"
+                  ><a href="api/games/tekateki"
+                    ><i class="uil uil-play"></i> Go to
+                  </a></span
+                >
+              </div>
+              <div class="data status">
+                <span class="data-title">Status</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+                <span class="data-list">Online</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script src="js/docs.js" defer></script>
+    </body>
+  </body>
+</html>
